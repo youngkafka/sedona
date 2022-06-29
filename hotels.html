@@ -33,21 +33,44 @@
                 <fieldset>
                   <legend>Инфраструктура:</legend>
                   <ul>
-                      <li></li>
-                      <li></li>
-                      <li></li>
+                      <li>
+                          <input type="checkbox" name="pool" id="filter-pool" checked>
+                          <label for="filter-pool">Бассейн</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="parking" id="filter-parking">
+                        <label for="filter-parking">Парковка</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="wifi" id="filter-wifi">
+                        <label for="filter-wifi">Wi-Fi</label>
+                        <li>
                   </ul>
                 </fieldset>
                 <fieldset>
                   <legend>Тип жилья</legend>
                   <ul>
-                      <li></li>
-                      <li></li>
-                      <li></li>
+                      <li>
+                        <input type="checkbox" name="hotel" id="filter-hotel">
+                        <label for="filter-hotel">Гостинница</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="motel" id="filter-motel">
+                        <label for="filter-motel">Мотель</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="apartment" id="filter-apartment">
+                        <label for="filter-apartment">Апартаменты</label>
+                      </li>
                   </ul>
                 </fieldset>
                 <fieldset>
                     <legend>Стоимость в сутки, ₽:</legend>
+                    <div class="price_box">
+                        <span>От 0</span>
+                        <span>До 3000</span>
+                    </div>
+                    <input type="range" id="price" name="price" min="0" max="3000" step="100">
                   </fieldset>
                 <button type="submit">Показать</button>
               </form>
